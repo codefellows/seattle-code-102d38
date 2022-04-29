@@ -9,15 +9,19 @@ function yourName() {
 function timeOfDay() {
     let time = prompt('What time is it?'); // 15;
     let message = '';
-
-    if (time <= 11) {
+   if(time==0||time==null){
+      alert(' no time was given')
+  }
+    else if (time <= 11) {
         message = 'Good Morning!';
     } else if (time <= 18) {
         message = 'Good Afternoon!';
 
     } else if (time <= 24) {
         message = "Good Evening!";
-    } else {
+    }
+
+    else {
         message = "Time does not exist!";
     }
 
